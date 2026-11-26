@@ -1,6 +1,6 @@
 # CX EDI — Ecosistema Digital Inteligente
 
-> No es software. Es soberanía operativa. CX EDI (Ecosistema Digital Inteligente) es una startup de Xplorers Startups: un sistema operativo comercial autónomo B2B para LATAM: una fuerza de ventas que opera sola, 24/7, sobre la propia infraestructura del cliente, llevando a cada cliente del primer contacto hasta el cobro. Es un nodo del ecosistema ARKAI.
+> No es software. Es una fuerza de ventas con IA que no duerme. CX EDI (Ecosistema Digital Inteligente) es una startup de Xplorers Startups: un sistema operativo comercial autónomo B2B para LATAM: una fuerza de ventas que opera sola, 24/7, sobre la propia infraestructura del cliente, llevando a cada cliente del primer contacto hasta el cobro. Es un nodo del ecosistema ARKAI.
 
 ## Qué es
 CX EDI reemplaza el "Frankenstein digital" (CRM, WhatsApp, hojas de cálculo y chatbots que no se hablan entre sí) por una sola operación continua. Promesa central: multiplica tus ventas con una fuerza de ventas que opera sola, 24/7.

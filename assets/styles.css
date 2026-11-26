@@ -13,7 +13,7 @@
   --violeta:#a855f7; --violeta-claro:#c084fc; --violeta-luz:#dcccff; --violeta-profundo:#4c1d95;
   /* Magenta — acento vivo (usar con mesura) */
   --magenta:#d946ef;
-  /* Oro Imperial — acción / conversión */
+  /* Oro — acción / conversión */
   --ambar:#e9c46a; --ambar-claro:#f4d58d;
   /* Neutros — foreground = luz sobre el océano */
   --marfil:#ece6f7; --niebla:#a99fc4; --niebla-2:#7d719f;
@@ -493,6 +493,38 @@ strong,b{color:var(--marfil); font-weight:600}
 @media(max-width:760px){.founders__grid{grid-template-columns:repeat(2,1fr);max-width:520px}}
 @media(max-width:520px){.founders__grid{grid-template-columns:1fr;max-width:300px}}
 
+/* ---------- Ola 1 v7.2 · humano / roster / trustband ---------- */
+.sellos{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.sellos .sello{font-family:var(--f-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--violeta-luz);border:1px solid var(--line);border-radius:999px;padding:.7em 1.2em;background:var(--obsidiana-2)}
+.roster-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;max-width:920px;margin:0 auto}
+.roster-chip{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--niebla);border:1px solid var(--line);border-radius:999px;padding:.5em .95em}
+.roster-chip b{color:var(--violeta-luz);font-weight:500}
+.roster-row__cap{margin-top:18px;font-size:.92rem}
+.roster-row__cap a{color:var(--violeta-claro);text-decoration:none;border-bottom:1px solid var(--line)}
+.roster-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:38px}
+.rcard{background:var(--obsidiana-2);border:1px solid var(--line);border-radius:var(--r-lg);padding:18px 16px;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.rcard:hover{border-color:var(--violeta);transform:translateY(-3px)}
+.rcard__top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px}
+.rcard__num{font-family:var(--f-mono);font-size:.7rem;color:var(--niebla-2)}
+.rcard__eslabon{font-family:var(--f-mono);font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violeta-claro)}
+.rcard__name{font-family:var(--f-display);font-weight:600;color:var(--marfil);font-size:1.02rem;margin-bottom:8px}
+.rcard__line{font-size:.85rem;color:var(--niebla);line-height:1.55;margin:0}
+.roster-moat{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.roster-moat__card{background:linear-gradient(160deg,var(--obsidiana-2),var(--obsidiana-3));border:1px solid color-mix(in srgb,var(--ambar) 28%,transparent);border-radius:var(--r-lg);padding:20px 18px}
+@media(max-width:900px){.roster-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.roster-grid{grid-template-columns:1fr}.roster-moat{grid-template-columns:1fr}}
+.trustband{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--obsidiana);padding:22px 0}
+.trust{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px}
+.trust__item{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--niebla)}
+.trust__item::before{content:"◆";color:var(--violeta);margin-right:9px;font-size:.6rem}
+
+/* ---------- Foto de equipo real (HUMAN · crew) ---------- */
+.founders__crew{margin:34px auto 0;max-width:840px;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--obsidiana-2)}
+.founders__crew img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+.teamphoto{margin:0;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--obsidiana-2)}
+.teamphoto img{width:100%;height:auto;display:block;aspect-ratio:16/9;object-fit:cover}
+.teamphoto__cap{font-family:var(--f-mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--violeta-luz);padding:14px 16px;text-align:center}
+
 /* ---------- WhatsApp flotante (click-to-chat con contexto de sección) ---------- */
 .wa-float{position:fixed;right:clamp(16px,3vw,28px);bottom:clamp(16px,3vw,28px);z-index:60;
   width:58px;height:58px;border-radius:50%;display:grid;place-items:center;
@@ -567,6 +599,7 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--violeta-claro);outl
 .score__mode-t{font-family:var(--f-display);font-weight:700;font-size:1.15rem}
 .score__mode-b{font-size:.88rem;color:var(--niebla);line-height:1.5}
 .score__micro{text-align:center;font-size:.78rem;color:var(--niebla-2);margin-top:18px}
+.score__close{text-align:center;font-size:.98rem;color:var(--violeta-luz);font-style:italic;margin-top:18px}
 .score__kicker{font-family:var(--f-mono);font-size:.66rem;letter-spacing:.22em;color:var(--ambar-claro);text-transform:uppercase;margin-bottom:12px;text-align:center}
 .score__qtext{font-family:var(--f-display);font-size:clamp(1.25rem,2.6vw,1.7rem);text-align:center;line-height:1.25;margin:0 0 6px;color:var(--marfil)}
 .score__qsub{text-align:center;color:var(--niebla);font-size:.92rem;margin:0 auto 22px;max-width:46ch}

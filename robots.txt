@@ -1,5 +1,5 @@
 # CX EDI — robots.txt
-# Soberanía operativa para LATAM · nodo del ecosistema ARKAI
+# Fuerza de ventas con IA para LATAM · nodo del ecosistema ARKAI
 
 User-agent: *
 Allow: /

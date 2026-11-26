@@ -4,7 +4,7 @@
 ## Qué es CX EDI
 CX EDI es un sistema operativo comercial autónomo para LATAM: una fuerza de ventas que
 opera sola, 24/7, sobre la propia infraestructura del negocio —del primer contacto hasta el cobro.
-No es un software más ni un chatbot: es soberanía operativa.
+No es un software más ni un chatbot: es tu fuerza de ventas, operando sola.
 
 ## El enemigo: Frankenstein Digital
 La mayoría de los negocios operan con más de seis herramientas que no se hablan (CRM, WhatsApp,
