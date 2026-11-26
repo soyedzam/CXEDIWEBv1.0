@@ -1,0 +1,51 @@
+/* CXE · lectura y movimiento. Scoped to the medical landing. */
+#cx-health{--cx-out:cubic-bezier(.22,1,.36,1);--cx-inout:cubic-bezier(.65,0,.35,1);--cx-fast:160ms;--cx-medium:420ms;--cx-slow:900ms;--niebla:#beb3d0;font-size:18px;line-height:1.7}
+#cx-health .cx-wrap{max-width:1280px}
+#cx-health h1{font-size:clamp(40px,5vw,74px);line-height:1.09;letter-spacing:-.045em}
+#cx-health .cx-hero h1{font-size:clamp(40px,5vw,74px);max-width:800px;text-wrap:balance}
+#cx-health h2,#cx-health .cx-experience-copy h2,#cx-health .cx-short-pact h2{font-size:clamp(34px,3.2vw,46px);line-height:1.16;text-wrap:balance}
+#cx-health .cx-feature-copy h3,#cx-health .cx-contact-card h3,#cx-health .cx-pricing-scope h3{font-size:clamp(27px,2.2vw,32px);line-height:1.25}
+#cx-health :is(.cx-feature-copy,.cx-problem,.cx-diagnostic-copy,.cx-conversation-copy,.cx-experience-copy,.cx-short-pact,.cx-pricing-scope,.cx-contact-card)>p,#cx-health .cx-sub{font-size:18px;line-height:1.75}
+#cx-health .cx-hero-copy .cx-sub{font-size:clamp(18px,1.5vw,21px);line-height:1.7;max-width:590px}
+#cx-health .cx-eyebrow{font-size:13px;line-height:1.7;letter-spacing:.11em}
+#cx-health .cx-trust,#cx-health .cx-hero .cx-trust{font-size:15px;line-height:1.6}
+#cx-health .cx-rating{font-size:14px;padding:9px 13px;gap:7px;flex-wrap:wrap}
+#cx-health .cx-issue-tags span{font-size:13px;line-height:1.6}
+#cx-health .cx-fine,#cx-health .cx-call-number span,#cx-health .cx-price-label,#cx-health .cx-price-monthly p>span,#cx-health .cx-price-setup dd span,#cx-health .cx-pricing-note,#cx-health .cx-price-badge{font-size:15px;line-height:1.6}
+#cx-health .cx-experience-disclaimer{font-size:15px!important;line-height:1.7}
+#cx-health .cx-experience-copy .cx-experience-result{font-size:22px!important;line-height:1.5!important}
+#cx-health .cx-try-prompts{font-size:18px;line-height:1.7}
+#cx-health .cx-scope-list p{font-size:17px;line-height:1.7}
+#cx-health .cx-scope-list span{font-size:21px}
+#cx-health .cx-feature-shot .cx-shot-line,#cx-health .cx-missed p,#cx-health .cx-chat-head{font-size:14px;line-height:1.5}
+#cx-health .cx-status{font-size:12px}
+#cx-health .cx-missed .cx-fine{font-size:13px}
+#cx-health .cx-navlinks{font-size:13px}
+#cx-health .cx-gold,#cx-health .cx-hero .cx-gold,#cx-health .cx-price-cta,#cx-health .cx-wa-tabs button{font-size:16px;line-height:1.5;min-height:50px}
+#cx-health .cx-nav>.cx-gold{font-size:13px;min-height:46px}
+#cx-health .cx-wa-tabs button{padding:11px 20px}
+#cx-health .cx-footer p,#cx-health .cx-footer li{font-size:16px;line-height:1.75}
+#cx-health .cx-footer h4{font-size:13px;line-height:1.6}
+#cx-health .cx-copyright{font-size:12px;line-height:1.8}
+#cx-health .cx-brand small{font-size:9px;max-width:120px}
+#cx-health .cx-section{scroll-margin-top:30px}
+#cx-health :is(.cx-gold,.cx-price-cta,.cx-wa-tabs button){transition:transform var(--cx-fast) var(--cx-out),box-shadow var(--cx-medium) var(--cx-out),background-color var(--cx-fast) linear}
+#cx-health :is(.cx-gold,.cx-price-cta,.cx-wa-tabs button):active{transform:translateY(1px) scale(.985)}
+#cx-health .cx-feature,#cx-health .cx-price-card{transition:transform var(--cx-medium) var(--cx-out),border-color var(--cx-medium) linear,box-shadow var(--cx-medium) var(--cx-out)}
+#cx-health .cx-hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 70% 28%,#a855f720,transparent 52%),radial-gradient(ellipse at 9% 86%,#e9c46a12,transparent 44%);opacity:.8}
+#cx-health .cx-experience-panel{box-shadow:inset 0 1px #ece6f72b,0 24px 90px #a855f715}
+#cx-health .cx-experience-photo,#cx-health .cx-problem-image,#cx-health .cx-diag-photo{overflow:hidden;border-radius:24px}
+#cx-health .cx-experience-photo>img{height:100%;object-fit:cover}
+#cx-health .cx-hero .cx-video-bg{height:100%;object-fit:cover}
+#cx-health .cx-navlinks a:focus-visible,#cx-health .cx-footer a:focus-visible{outline:2px solid var(--ambar);outline-offset:5px}
+@media(hover:hover) and (pointer:fine){#cx-health .cx-feature:hover,#cx-health .cx-price-card:hover{transform:translateY(-4px);border-color:#c084fc75;box-shadow:0 18px 55px #a855f719}#cx-health .cx-gold:hover{transform:translateY(-2px);box-shadow:0 8px 32px #e9c46a35}}
+@container cx-preview (width>=700px){#cx-health .cx-section{padding:96px 0}#cx-health .cx-experience-panel{grid-template-columns:38% 62%}#cx-health .cx-experience-copy{padding:40px}#cx-health .cx-feature-copy{padding:28px}#cx-health .cx-feature-image{height:260px}#cx-health .cx-short-pact{max-width:960px;padding:44px}#cx-health .cx-hero{padding-top:48px;padding-bottom:48px}#cx-health .cx-hero h1{font-size:clamp(54px,5vw,74px)}#cx-health .cx-hero-copy{padding-top:14px}#cx-health .cx-price-card{padding:36px}#cx-health .cx-contact-card{padding:38px}}
+@container cx-preview (width<=699px){#cx-health .cx-wrap{width:calc(100% - 40px)}#cx-health .cx-section{padding:64px 0}#cx-health .cx-hero{padding-top:24px;padding-bottom:28px}#cx-health .cx-hero h1{font-size:clamp(38px,10vw,45px);text-wrap:initial}#cx-health .cx-experience-copy{padding:16px 24px 28px}#cx-health .cx-feature-copy{padding:24px}#cx-health .cx-hero .cx-gold{padding:17px 18px;letter-spacing:.015em}#cx-health .cx-copyright{gap:16px}#cx-health .cx-footer-grid{gap:32px 20px}#cx-health .cx-brand small{display:none}#cx-health .cx-nav>.cx-gold{font-size:12px;max-width:128px}#cx-health .cx-contact-card{padding:28px 24px}#cx-health .cx-call-number a{font-size:21px}#cx-health .cx-short-pact{padding:30px 24px}}
+@container cx-preview (width<=390px){#cx-health .cx-issue-tags{grid-template-columns:1fr}#cx-health .cx-eyebrow{font-size:12px}#cx-health .cx-rating{font-size:13px}#cx-health h2,#cx-health .cx-experience-copy h2{font-size:33px}#cx-health .cx-nav .cx-brand{font-size:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#cx-health *,#cx-health::before,#cx-health::after{animation:none!important;transition:none!important;transform:none!important}}
+#cx-health[data-lite] *,#cx-health[data-lite]::after{animation:none!important;transition:none!important}
+
+#cx-health .cx-wa-screen{width:min(100%,390px)}
+#cx-health[data-lite] .cx-feature:hover,#cx-health[data-lite] .cx-price-card:hover,#cx-health[data-lite] .cx-gold:hover{transform:none}
+
+#cx-mobile-preview #cx-health{font-size:18px;line-height:1.7}
